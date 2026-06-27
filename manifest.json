@@ -1,0 +1,10 @@
+{
+  "name": "Welcome Home",
+  "short_name": "Home",
+  "description": "A cozy sobriety home that grows one day at a time.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#100b08",
+  "theme_color": "#20140d",
+  "icons": []
+}
