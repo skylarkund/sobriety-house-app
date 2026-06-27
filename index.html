@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#8f5f35" />
+  <title>Welcome Home v0.1</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/rooms.css" />
+  <link rel="stylesheet" href="css/ui.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Welcome Home</p>
+        <h1 id="screenTitle">Front Porch</h1>
+      </div>
+      <button id="helpBtn" class="icon-btn" aria-label="Help">?</button>
+    </header>
+
+    <main id="stage" class="stage" aria-live="polite"></main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button data-view="home" class="nav-btn active">🏠<span>Home</span></button>
+      <button data-view="journal" class="nav-btn">📖<span>Journal</span></button>
+      <button data-view="timemachine" class="nav-btn">🕒<span>Time</span></button>
+      <button data-view="settings" class="nav-btn">⚙️<span>Settings</span></button>
+    </nav>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true"></div>
+
+  <script type="module" src="app/app.js"></script>
+</body>
+</html>
